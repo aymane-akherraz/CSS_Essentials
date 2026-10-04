@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+}
+
+main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-intro {
+    height: 400px;
+    width: 400px;
+
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.product-image {
+    width: 60%;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.buy-now {
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease transform 0.3s ease;
+}
+
+.buy-now:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.features {
+    padding: 20px;
+    width: 90%;
+}
+
+.features h2 {
+    text-align: center;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-item {
+    margin: 5px 0;
+    padding: 5px;
+    transform: translateX(-100%);
+    animation: slideIn 0.5s forwards;
+}
+
+.feature-item:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.feature-item:nth-child(3) {
+    animation-delay: 1s;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+        border: 1px solid #ddd;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
