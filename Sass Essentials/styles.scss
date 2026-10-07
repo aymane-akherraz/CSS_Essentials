@@ -1,0 +1,77 @@
+@use "sass:color";
+
+$primary-color: #007bff;
+$font-size: 16px;
+
+@mixin rounded-corners($radius) {
+	border-radius: $radius;
+}
+
+// Base styles
+body {
+	font-family: Arial, sans-serif;
+	color: $primary-color;
+	font-size: $font-size;
+	margin: 0;
+	padding: 0;
+}
+
+// Header and Footer styles
+.header,
+.footer {
+	background-color: color.scale($primary-color, $lightness: 40%);
+	text-align: center;
+	padding: 20px;
+}
+
+
+.header {
+	h1 {
+		font-size: 2em;
+	}
+}
+
+// Main content styles
+main {
+	padding: 20px;
+
+	.about {
+		h2 {
+			font-size: 1.5em;
+		}
+
+		p {
+			font-size: $font-size;
+		}
+	}
+
+	.features {
+		h2 {
+			font-size: 1.5em;
+		}
+
+		.feature-list {
+			list-style-type: disc;
+			padding-left: 20px;
+
+			li {
+				@include rounded-corners(5px);
+				padding: 5px;
+				margin-bottom: 5px;
+				background-color: color.scale($primary-color, $lightness: 50%);
+			}
+		}
+	}
+
+	.example {
+		h2 {
+			font-size: 1.5em;
+
+			.example-text {
+				@include rounded-corners(10px);
+				padding: 10px;
+				background-color: color.scale($primary-color, $lightness: 50%);
+			}
+		}
+	}
+}
