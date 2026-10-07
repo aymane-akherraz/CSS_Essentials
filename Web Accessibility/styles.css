@@ -1,6 +1,5 @@
 body {
 	margin: 0;
-	font-size: 16px;
 	font-family: Arial, sans-serif;
 	color: #333;
 	background-color: #f4f4f4;
@@ -59,7 +58,8 @@ body {
 }
 
 .large-text {
-	font-size: 20px;
+	font-size: 1.25rem;
+	/* Scales to 20px based on the standard browser default font size */
 }
 
 .high-contrast-text {
