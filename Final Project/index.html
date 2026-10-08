@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>World Trivia</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>World Trivia</h1>
+		<nav>
+			<ul class="navigation-menu">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#trivia">Trivia</a></li>
+				<li><a href="#categories">Categories</a> </li>
+				<li><a href="#scores">Scores</a></li>
+				<li><a href="#subscribe">Subscribe</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="home">
+			<h1>Welcome to World Trivia</h1>
+			<p>Discover amazing facts about different countries around the world. Test your knowledge and learn
+				something new every day!</p>
+		</section>
+		<section id="trivia">
+			<h2>Trivia Facts</h2>
+			<div class="trivia-item">
+				<img src="https://edube.org/uploads/media/default/0001/04/landmark.jpg" alt="Famous Landmark">
+				<p>Did you know that the Great Wall of China is over 13,000 miles long?</p>
+			</div>
+			<div class="trivia-item">
+				<img src="https://edube.org/uploads/media/default/0001/04/landmark.jpg" alt="Pyramids of Egypt">
+				<p>The Pyramids of Egypt are one of the Seven Wonders of the Ancient World.</p>
+			</div>
+			<div class="trivia-item">
+				<img src="https://edube.org/uploads/media/default/0001/04/landmark.jpg" alt="Eiffel Tower">
+				<p>The Eiffel Tower can be 15 cm taller during the summer, due to the expansion of iron in the heat.</p>
+			</div>
+			<div class="trivia-item">
+				<img src="https://edube.org/uploads/media/default/0001/04/landmark.jpg" alt="Machu Picchu">
+				<p>Machu Picchu in Peru is one of the New Seven Wonders of the World and sits at 2,430 meters above sea
+					level.</p>
+			</div>
+		</section>
+		<section id="categories">
+			<h2>Categories</h2>
+			<ul class="categories-list">
+				<li><a href="#history">History</a></li>
+				<li><a href="#geography">Geography</a></li>
+				<li><a href="#science">Science</a></li>
+				<li><a href="#culture">Culture</a></li>
+				<li><a href="#nature">Nature</a></li>
+			</ul>
+		</section>
+		<section id="scores">
+			<h2>Top Scores</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Rank</th>
+						<th>Name</th>
+						<th>Score</th>
+						<th>Country</th>
+						<th>Category</th>
+						<th>Date</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Alice</td>
+						<td>1500</td>
+						<td>USA</td>
+						<td>Geography</td>
+						<td>2024-06-20</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Bob</td>
+						<td>1400</td>
+						<td>Canada</td>
+						<td>History</td>
+						<td>2024-06-19</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section id="contact">
+			<h2>Contact Us</h2>
+			<p>Have any questions or feedback? Get in touch with us!</p>
+			<form>
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="message">Message</label>
+				<textarea id="message" name="message" required></textarea>
+
+				<button type="submit">Submit</button>
+			</form>
+		</section>
+		<section id="subscribe">
+			<h2>Subscribe to Puzzle of the Day</h2>
+			<p>Join our community and get a daily dose of trivia right in your inbox.</p>
+			<button class="subscribe-btn" aria-label="Subscribe to Puzzle of the Day">Subscribe Now</button>
+		</section>
+	</main>
+	<footer>
+		&copy; 2026 World Trivia
+	</footer>
+</body>
+</html>
